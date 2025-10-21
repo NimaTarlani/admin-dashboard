@@ -1,3 +1,11 @@
+import Drawer from "./Drawer";
+import Header from "./Header";
+
 export default function Layout({ children }) {
-  return <div>{children}</div>;
+  return (
+    <div className="h-dvh overflow-hidden w-dvw">
+      <Header />
+      <Drawer>{children}</Drawer>
+    </div>
+  );
 }
