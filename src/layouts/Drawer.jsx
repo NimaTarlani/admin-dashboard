@@ -19,7 +19,7 @@ export default function Drawer({ children }) {
                       <ul className="menu  rounded-box max-w-xs w-full p-4">
             <li className="menu-title">Dashboard</li>
             <li>
-              <Link to="home">
+              <Link to="/dashboard/home">
                 <GoHome className="h-4 w-4" />
                 Home
               </Link>
@@ -37,7 +37,7 @@ export default function Drawer({ children }) {
           <ul className="menu  rounded-box max-w-xs w-full p-4">
             <li className="menu-title">General</li>
             <li>
-              <Link to="settings">
+              <Link to="/dashboard/settings">
                 <GoTools className="h-4 w-4" />
                 Setting
               </Link>

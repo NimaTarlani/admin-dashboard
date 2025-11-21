@@ -35,19 +35,18 @@ export default function Header() {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 p-2 shadow-2xl border border-base-200"
           >
             <li>
-              <a className="justify-between">
+              <Link to="/profile">
                 Profile
-                <span className="badge">New</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a>Settings</a>
+              <Link to="/profile/settings">Settings</Link>
             </li>
             <li>
-              <a>Logout</a>
+              <button className="badge badge-soft badge-error" onClick={()=>document.getElementById('logout_modal').showModal()}>Logout</button>
             </li>
           </ul>
         </div>
