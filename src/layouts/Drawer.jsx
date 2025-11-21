@@ -1,4 +1,4 @@
-import { GoTools } from "react-icons/go";
+import { GoHome, GoTools } from "react-icons/go";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Drawer({ children }) {
@@ -14,9 +14,19 @@ export default function Drawer({ children }) {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="h-dvh overflow-hidden bg-base-200 flex flex-col gap-4">
-          <ul className="menu w-80 p-4 ">
+        <div className="h-dvh overflow-hidden 
+        bg-base-200 flex flex-col gap-4">
+                      <ul className="menu  rounded-box max-w-xs w-full p-4">
             <li className="menu-title">Dashboard</li>
+            <li>
+              <Link to="/">
+                <GoHome className="h-4 w-4" />
+                Home
+              </Link>
+            </li>
+          </ul>
+          <ul className="menu w-80 p-4 ">
+            <li className="menu-title">pages</li>
             <li>
               <a>Sidebar Item 1</a>
             </li>
@@ -26,7 +36,6 @@ export default function Drawer({ children }) {
           </ul>
           <ul className="menu  rounded-box max-w-xs w-full p-4">
             <li className="menu-title">General</li>
-
             <li>
               <Link to="/settings">
                 <GoTools className="h-4 w-4" />
