@@ -5,7 +5,7 @@ export default function Drawer({ children }) {
   return (
     <div className="drawer lg:drawer-open">
       <input id="drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col items-center justify-center">
+      <div className="drawer-content flex flex-col">
         {children}
       </div>
       <div className="drawer-side">
