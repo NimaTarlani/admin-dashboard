@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import ProfileSettings from "../pages/profile/ProfileSettings";
 import Profile from "../pages/profile";
+import NotFound from "../pages/NotFound";
 
 export default function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ export default function AppRoutes() {
           <Route path="" element={<Profile />} />
           <Route path="settings" element={<ProfileSettings />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
