@@ -1,11 +1,14 @@
+import { Outlet } from "react-router-dom";
 import Drawer from "./Drawer";
 import Header from "./Header";
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <div className="h-dvh overflow-hidden w-dvw">
       <Header />
-      <Drawer>{children}</Drawer>
+      <Drawer>
+        <Outlet />
+      </Drawer>
     </div>
   );
 }
