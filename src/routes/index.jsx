@@ -7,8 +7,8 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
+        <Route path="dashboard" element={<Layout />}>
+          <Route path="home" element={<Home />} />
           <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
